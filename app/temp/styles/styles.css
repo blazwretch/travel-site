@@ -865,7 +865,7 @@ a{
 	}
 	}
 
-.testimonials{
+.testimonial{
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0 18px 1px 18px;
 	margin-bottom: 98px;
@@ -873,13 +873,13 @@ a{
 
 @media (min-width: 1010px){
 
-.testimonials{
+.testimonial{
 		margin-bottom: 0;
 		padding: 0 1.8125rem 1px 1.8125rem
 }
 	}
 
-.testimonials__photo {
+.testimonial__photo {
 		border-radius: 80px;
 		overflow: hidden;
 		width: 160px;
@@ -890,7 +890,7 @@ a{
 		border: 6px solid rgba(255, 255, 255, 0.8);
 	}
 
-.testimonials__title {
+.testimonial__title {
 		color: #2f5572;	
 		text-align: center;
 		font-size: 1.5rem;
@@ -898,7 +898,7 @@ a{
 		margin: 0;
 	}
 
-.testimonials__subtitle{
+.testimonial__subtitle{
 		color: #d59541;	
 		text-align: center;
 		font-size: 0.9375rem;
@@ -906,7 +906,7 @@ a{
 		margin: 0.25rem 0 1rem 0;
 	}
 
-.testimonials__last{
+.testimonial__last{
 		margin-bottom: 0;
 	}
 
@@ -1264,3 +1264,18 @@ Instead edit gulp/templates/sprite */
 
 }
 	}
+
+.reveal-item {
+	opacity: 0;
+	-webkit-transition: all 1.5s ease-out;
+	transition: all 1.5s ease-out;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+.reveal-item--is-visible{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
